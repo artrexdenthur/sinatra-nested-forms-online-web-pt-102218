@@ -14,14 +14,20 @@ class Pirate
   def self.create(hash)
     pirate = self.new(hash["name"], hash["weight"], hash["height"])
     pirate.save
+<<<<<<< HEAD
     pirate
+=======
+>>>>>>> b591cd6b1287c94861a0994710ad6fc200e37646
   end
   
   def add_ship(hash)
     ship = Ship.new(hash["name"], hash["type"], hash["booty"])
     self.ships << ship
     ship.pirate = self
+<<<<<<< HEAD
     self
+=======
+>>>>>>> b591cd6b1287c94861a0994710ad6fc200e37646
   end
   
   def save
